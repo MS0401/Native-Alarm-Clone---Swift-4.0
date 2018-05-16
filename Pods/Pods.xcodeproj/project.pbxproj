@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		177A46EA487255FEF53454F1E3DE2723 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9663ABD172022E1CD94FB1FC7C739B /* ImageHelper.swift */; };
+		2A0DA3CB23BAE158A137EAF2FF82AA6B /* Pods-Alarm-ios-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81CF915BABB9BFA0634363841679C39B /* Pods-Alarm-ios-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49512C5E482B94F34654AB784EFE0611 /* CDAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A103218985FF99A6309A8526D23A835B /* CDAlertView.bundle */; };
+		785D8DA08BB47D25289C1ACED7F270EB /* CDAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C710A480ED6783A1441304170667AF2 /* CDAlertView-dummy.m */; };
+		82B8E1523AC95C3D2E56D977C5D3B983 /* Pods-Alarm-ios-swiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54752F14645C903D46CE943D66E667D9 /* Pods-Alarm-ios-swiftTests-dummy.m */; };
+		85D793A244F6E144AC81BE59B147E1A2 /* CDAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36209CA204542C1AEC6EF7DCF4EBB46 /* CDAlertView.swift */; };
+		9DEC4CB25B4FCFB5004757DE9C8C9ABE /* Pods-Alarm-ios-swiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3773BBDD5F891083452967EA66425A59 /* Pods-Alarm-ios-swiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FD7DDE53F9EF82FEC5515E6D42F7475 /* CDAlertHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5579882E2ADA39884645DEE5D35DF /* CDAlertHeaderView.swift */; };
+		A2F1AE49B40FA19878D08BFB9AEEDBE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		A85D5199789953B1C662B197E0460AD2 /* Pods-Alarm-ios-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EBE5104572A43985255BA09C6182D4 /* Pods-Alarm-ios-swift-dummy.m */; };
+		ABE1041B04AE5F9819B1651BD0A2C38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		B5B4B4360749E1D13CF2C52D04F56064 /* CDAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7F1FEBBFEC24F46BB476ADDC4A2997 /* CDAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7D7C81AD022E37F39027243A314C132 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		DDA5FEC2649A4CC2E74661569A161B6F /* LayoutConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F45BBEEA35D970AD8A423CCF495E04 /* LayoutConstraintsExtension.swift */; };
+		F408FDBFC38CCA098969881D1C681B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCB1B94356AC39EA73BE1061D88B311 /* Assets.xcassets */; };
+		F9D690A508CAEB39899EE94DC8891C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B131179065E4BB20A6EA9B86B196276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 369C26E0019831DFC30E7122499AB269;
+			remoteInfo = CDAlertView;
+		};
+		9E022DE6025B80186394648B956C2EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4BDF1191BBE4F429F08A241D8B53E2A;
+			remoteInfo = "CDAlertView-CDAlertView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00598B2D0FADB5904D4DA6029521145A /* CDAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CDAlertView.modulemap; sourceTree = "<group>"; };
+		065D9A5A579B3F42F62078F23A22CA94 /* Pods-Alarm-ios-swiftTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alarm-ios-swiftTests-frameworks.sh"; sourceTree = "<group>"; };
+		06C5579882E2ADA39884645DEE5D35DF /* CDAlertHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertHeaderView.swift; path = CDAlertView/Classes/CDAlertHeaderView.swift; sourceTree = "<group>"; };
+		1A237C1C93C29B4CD3668EF4E2814B56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E59EAEA60499D8C15ABC66E5F25460D /* Pods_Alarm_ios_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Alarm_ios_swiftTests.framework; path = "Pods-Alarm-ios-swiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F1179AB25CC173E31F3D90DE0B9B07 /* Pods-Alarm-ios-swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alarm-ios-swift-frameworks.sh"; sourceTree = "<group>"; };
+		3773BBDD5F891083452967EA66425A59 /* Pods-Alarm-ios-swiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alarm-ios-swiftTests-umbrella.h"; sourceTree = "<group>"; };
+		3F575436B5714DF2B18D73E2B58463FA /* ResourceBundle-CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CDAlertView-Info.plist"; sourceTree = "<group>"; };
+		48F45BBEEA35D970AD8A423CCF495E04 /* LayoutConstraintsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintsExtension.swift; path = CDAlertView/Classes/LayoutConstraintsExtension.swift; sourceTree = "<group>"; };
+		4C710A480ED6783A1441304170667AF2 /* CDAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDAlertView-dummy.m"; sourceTree = "<group>"; };
+		4CC3D935B0E4623B79C6034C2B86B94C /* CDAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDAlertView.xcconfig; sourceTree = "<group>"; };
+		4CCB1B94356AC39EA73BE1061D88B311 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CDAlertView/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		4FE7D2534946E38A0D453DB79FF05261 /* Pods-Alarm-ios-swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alarm-ios-swift-resources.sh"; sourceTree = "<group>"; };
+		54752F14645C903D46CE943D66E667D9 /* Pods-Alarm-ios-swiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alarm-ios-swiftTests-dummy.m"; sourceTree = "<group>"; };
+		5F9663ABD172022E1CD94FB1FC7C739B /* ImageHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageHelper.swift; path = CDAlertView/Classes/ImageHelper.swift; sourceTree = "<group>"; };
+		64EBE5104572A43985255BA09C6182D4 /* Pods-Alarm-ios-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alarm-ios-swift-dummy.m"; sourceTree = "<group>"; };
+		69E702DF7FFE15BD7FBE93761301DE7A /* CDAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-prefix.pch"; sourceTree = "<group>"; };
+		7F8BC66A3DCF1A3FD8AAA12F530F8DEB /* Pods-Alarm-ios-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alarm-ios-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		81CF915BABB9BFA0634363841679C39B /* Pods-Alarm-ios-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alarm-ios-swift-umbrella.h"; sourceTree = "<group>"; };
+		82D9DE4AD3E58B1CBE0F31E34F734556 /* Pods_Alarm_ios_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Alarm_ios_swift.framework; path = "Pods-Alarm-ios-swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EFD788CC1AC21557D1A974CA87E97EA /* Pods-Alarm-ios-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alarm-ios-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99AAE64DE388F5BB0FEE02DA40E4F746 /* Pods-Alarm-ios-swiftTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alarm-ios-swiftTests-resources.sh"; sourceTree = "<group>"; };
+		9D7F1FEBBFEC24F46BB476ADDC4A2997 /* CDAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-umbrella.h"; sourceTree = "<group>"; };
+		A103218985FF99A6309A8526D23A835B /* CDAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CDAlertView.bundle; path = CDAlertView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1FAC5E9797714B87097F2DFCC8F845B /* Pods-Alarm-ios-swiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alarm-ios-swiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9E28C78FDA305131B187F267E134195 /* Pods-Alarm-ios-swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alarm-ios-swift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C36209CA204542C1AEC6EF7DCF4EBB46 /* CDAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertView.swift; path = CDAlertView/Classes/CDAlertView.swift; sourceTree = "<group>"; };
+		C587F37C56AD49CB197263C021FF6586 /* Pods-Alarm-ios-swiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alarm-ios-swiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8E2CCACBAAC4DDA19A76697055074E5 /* Pods-Alarm-ios-swiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Alarm-ios-swiftTests.modulemap"; sourceTree = "<group>"; };
+		CA71BD130183584D3980C1987B46FC16 /* Pods-Alarm-ios-swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alarm-ios-swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBF3B5D5EDA9F064FF52E9C0634173E8 /* Pods-Alarm-ios-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alarm-ios-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFA67C3EC872E46B9BFC97E7EC99BFAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E7B39633AE1DA9B01C80CACA56898B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B1C1B0B868170F2DE7661C4EE802F3 /* Pods-Alarm-ios-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alarm-ios-swift.release.xcconfig"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DE1A8072DA95AE18260E54FE67330691 /* Pods-Alarm-ios-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Alarm-ios-swift.modulemap"; sourceTree = "<group>"; };
+		F16BBFAB2748A70090822C8B8A5C3523 /* CDAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDAlertView.framework; path = CDAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BB1BEDDB584699B12DF4DCF6384E817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE1041B04AE5F9819B1651BD0A2C38B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80FD53BBE5B6B0A925072932AF79A07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D690A508CAEB39899EE94DC8891C55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5781823FCF13DFC0D691BC350571CB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D7C81AD022E37F39027243A314C132 /* Foundation.framework in Frameworks */,
+				A2F1AE49B40FA19878D08BFB9AEEDBE9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D7A0FAD5252F09F8E7F94123D02B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3819E6AD967FF779E5AC84F31A3AF6C8 /* Pods-Alarm-ios-swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFA67C3EC872E46B9BFC97E7EC99BFAA /* Info.plist */,
+				C8E2CCACBAAC4DDA19A76697055074E5 /* Pods-Alarm-ios-swiftTests.modulemap */,
+				C587F37C56AD49CB197263C021FF6586 /* Pods-Alarm-ios-swiftTests-acknowledgements.markdown */,
+				B1FAC5E9797714B87097F2DFCC8F845B /* Pods-Alarm-ios-swiftTests-acknowledgements.plist */,
+				54752F14645C903D46CE943D66E667D9 /* Pods-Alarm-ios-swiftTests-dummy.m */,
+				065D9A5A579B3F42F62078F23A22CA94 /* Pods-Alarm-ios-swiftTests-frameworks.sh */,
+				99AAE64DE388F5BB0FEE02DA40E4F746 /* Pods-Alarm-ios-swiftTests-resources.sh */,
+				3773BBDD5F891083452967EA66425A59 /* Pods-Alarm-ios-swiftTests-umbrella.h */,
+				8EFD788CC1AC21557D1A974CA87E97EA /* Pods-Alarm-ios-swiftTests.debug.xcconfig */,
+				CBF3B5D5EDA9F064FF52E9C0634173E8 /* Pods-Alarm-ios-swiftTests.release.xcconfig */,
+			);
+			name = "Pods-Alarm-ios-swiftTests";
+			path = "Target Support Files/Pods-Alarm-ios-swiftTests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		551978F55BFDE444C822E00B646DE1DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00598B2D0FADB5904D4DA6029521145A /* CDAlertView.modulemap */,
+				4CC3D935B0E4623B79C6034C2B86B94C /* CDAlertView.xcconfig */,
+				4C710A480ED6783A1441304170667AF2 /* CDAlertView-dummy.m */,
+				69E702DF7FFE15BD7FBE93761301DE7A /* CDAlertView-prefix.pch */,
+				9D7F1FEBBFEC24F46BB476ADDC4A2997 /* CDAlertView-umbrella.h */,
+				D4E7B39633AE1DA9B01C80CACA56898B /* Info.plist */,
+				3F575436B5714DF2B18D73E2B58463FA /* ResourceBundle-CDAlertView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CDAlertView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				89BB0E4A530288F1C9D4E28DE7042C54 /* Pods */,
+				B26C676D80A07E021C1F7CA682F57039 /* Products */,
+				B9AD0880333E731FB861E009F9329490 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89BB0E4A530288F1C9D4E28DE7042C54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAC39281517032A91DE254A00A8D5FD5 /* CDAlertView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B26C676D80A07E021C1F7CA682F57039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A103218985FF99A6309A8526D23A835B /* CDAlertView.bundle */,
+				F16BBFAB2748A70090822C8B8A5C3523 /* CDAlertView.framework */,
+				82D9DE4AD3E58B1CBE0F31E34F734556 /* Pods_Alarm_ios_swift.framework */,
+				1E59EAEA60499D8C15ABC66E5F25460D /* Pods_Alarm_ios_swiftTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9AD0880333E731FB861E009F9329490 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5B69A37A8A0C056D87BA0DFC936837B /* Pods-Alarm-ios-swift */,
+				3819E6AD967FF779E5AC84F31A3AF6C8 /* Pods-Alarm-ios-swiftTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D5B69A37A8A0C056D87BA0DFC936837B /* Pods-Alarm-ios-swift */ = {
+			isa = PBXGroup;
+			children = (
+				1A237C1C93C29B4CD3668EF4E2814B56 /* Info.plist */,
+				DE1A8072DA95AE18260E54FE67330691 /* Pods-Alarm-ios-swift.modulemap */,
+				B9E28C78FDA305131B187F267E134195 /* Pods-Alarm-ios-swift-acknowledgements.markdown */,
+				CA71BD130183584D3980C1987B46FC16 /* Pods-Alarm-ios-swift-acknowledgements.plist */,
+				64EBE5104572A43985255BA09C6182D4 /* Pods-Alarm-ios-swift-dummy.m */,
+				30F1179AB25CC173E31F3D90DE0B9B07 /* Pods-Alarm-ios-swift-frameworks.sh */,
+				4FE7D2534946E38A0D453DB79FF05261 /* Pods-Alarm-ios-swift-resources.sh */,
+				81CF915BABB9BFA0634363841679C39B /* Pods-Alarm-ios-swift-umbrella.h */,
+				7F8BC66A3DCF1A3FD8AAA12F530F8DEB /* Pods-Alarm-ios-swift.debug.xcconfig */,
+				D7B1C1B0B868170F2DE7661C4EE802F3 /* Pods-Alarm-ios-swift.release.xcconfig */,
+			);
+			name = "Pods-Alarm-ios-swift";
+			path = "Target Support Files/Pods-Alarm-ios-swift";
+			sourceTree = "<group>";
+		};
+		EAC39281517032A91DE254A00A8D5FD5 /* CDAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				06C5579882E2ADA39884645DEE5D35DF /* CDAlertHeaderView.swift */,
+				C36209CA204542C1AEC6EF7DCF4EBB46 /* CDAlertView.swift */,
+				5F9663ABD172022E1CD94FB1FC7C739B /* ImageHelper.swift */,
+				48F45BBEEA35D970AD8A423CCF495E04 /* LayoutConstraintsExtension.swift */,
+				F6592F03C1207EF7BFB55F81FDD025F3 /* Resources */,
+				551978F55BFDE444C822E00B646DE1DC /* Support Files */,
+			);
+			name = CDAlertView;
+			path = CDAlertView;
+			sourceTree = "<group>";
+		};
+		F6592F03C1207EF7BFB55F81FDD025F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CCB1B94356AC39EA73BE1061D88B311 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0470D1A38B88ED52446C2CF02D0B6B55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DEC4CB25B4FCFB5004757DE9C8C9ABE /* Pods-Alarm-ios-swiftTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC09B3474FCADD5ADF737E95EE9BE04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B4B4360749E1D13CF2C52D04F56064 /* CDAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0BF890B37FD0685E4A7D7F3BCB2EA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0DA3CB23BAE158A137EAF2FF82AA6B /* Pods-Alarm-ios-swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		369C26E0019831DFC30E7122499AB269 /* CDAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F7EAFBA6323B60EAD537F74FB49C1C /* Build configuration list for PBXNativeTarget "CDAlertView" */;
+			buildPhases = (
+				E5620E1094B413A427B2891CFB4E97EA /* Sources */,
+				C5781823FCF13DFC0D691BC350571CB6 /* Frameworks */,
+				4A7B66480A451A9A0F45E5FFBB662155 /* Resources */,
+				1DC09B3474FCADD5ADF737E95EE9BE04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF1460637310CBFB3BB7F13CEEDCA24E /* PBXTargetDependency */,
+			);
+			name = CDAlertView;
+			productName = CDAlertView;
+			productReference = F16BBFAB2748A70090822C8B8A5C3523 /* CDAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6264D08B2A65215E3B4B7756ED3966FD /* Pods-Alarm-ios-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506F044F160DCCAE980EE9F0D01B6C56 /* Build configuration list for PBXNativeTarget "Pods-Alarm-ios-swift" */;
+			buildPhases = (
+				4D916D2B94699C72409DE6F4C53CF4E0 /* Sources */,
+				A80FD53BBE5B6B0A925072932AF79A07 /* Frameworks */,
+				8D0BF890B37FD0685E4A7D7F3BCB2EA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6994E2188F6F9C13A89326C57A4DD41 /* PBXTargetDependency */,
+			);
+			name = "Pods-Alarm-ios-swift";
+			productName = "Pods-Alarm-ios-swift";
+			productReference = 82D9DE4AD3E58B1CBE0F31E34F734556 /* Pods_Alarm_ios_swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B9C649F9A32D9BDE1260E7F747FB3866 /* Pods-Alarm-ios-swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167E1DDB3688C701EC46A67941CE721E /* Build configuration list for PBXNativeTarget "Pods-Alarm-ios-swiftTests" */;
+			buildPhases = (
+				246B469C01D559A2939EC8C9965C26EF /* Sources */,
+				2BB1BEDDB584699B12DF4DCF6384E817 /* Frameworks */,
+				0470D1A38B88ED52446C2CF02D0B6B55 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Alarm-ios-swiftTests";
+			productName = "Pods-Alarm-ios-swiftTests";
+			productReference = 1E59EAEA60499D8C15ABC66E5F25460D /* Pods_Alarm_ios_swiftTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4BDF1191BBE4F429F08A241D8B53E2A /* CDAlertView-CDAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD56C041D949064F5CA7899644728E35 /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */;
+			buildPhases = (
+				A4DE70E8AF00CFBCA3AA8D712980DD0D /* Sources */,
+				D2D7A0FAD5252F09F8E7F94123D02B17 /* Frameworks */,
+				E4FB523B26F7FAEB936EB0B566954176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CDAlertView-CDAlertView";
+			productName = "CDAlertView-CDAlertView";
+			productReference = A103218985FF99A6309A8526D23A835B /* CDAlertView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B26C676D80A07E021C1F7CA682F57039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				369C26E0019831DFC30E7122499AB269 /* CDAlertView */,
+				C4BDF1191BBE4F429F08A241D8B53E2A /* CDAlertView-CDAlertView */,
+				6264D08B2A65215E3B4B7756ED3966FD /* Pods-Alarm-ios-swift */,
+				B9C649F9A32D9BDE1260E7F747FB3866 /* Pods-Alarm-ios-swiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A7B66480A451A9A0F45E5FFBB662155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49512C5E482B94F34654AB784EFE0611 /* CDAlertView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FB523B26F7FAEB936EB0B566954176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408FDBFC38CCA098969881D1C681B36 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		246B469C01D559A2939EC8C9965C26EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B8E1523AC95C3D2E56D977C5D3B983 /* Pods-Alarm-ios-swiftTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D916D2B94699C72409DE6F4C53CF4E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85D5199789953B1C662B197E0460AD2 /* Pods-Alarm-ios-swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DE70E8AF00CFBCA3AA8D712980DD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5620E1094B413A427B2891CFB4E97EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD7DDE53F9EF82FEC5515E6D42F7475 /* CDAlertHeaderView.swift in Sources */,
+				785D8DA08BB47D25289C1ACED7F270EB /* CDAlertView-dummy.m in Sources */,
+				85D793A244F6E144AC81BE59B147E1A2 /* CDAlertView.swift in Sources */,
+				177A46EA487255FEF53454F1E3DE2723 /* ImageHelper.swift in Sources */,
+				DDA5FEC2649A4CC2E74661569A161B6F /* LayoutConstraintsExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6994E2188F6F9C13A89326C57A4DD41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDAlertView;
+			target = 369C26E0019831DFC30E7122499AB269 /* CDAlertView */;
+			targetProxy = 4B131179065E4BB20A6EA9B86B196276 /* PBXContainerItemProxy */;
+		};
+		BF1460637310CBFB3BB7F13CEEDCA24E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CDAlertView-CDAlertView";
+			target = C4BDF1191BBE4F429F08A241D8B53E2A /* CDAlertView-CDAlertView */;
+			targetProxy = 9E022DE6025B80186394648B956C2EE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D23278938ADF334174C5BF2A4B6B1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		512F54136B9064F984C49F606F9AAC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EFD788CC1AC21557D1A974CA87E97EA /* Pods-Alarm-ios-swiftTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Alarm-ios-swiftTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alarm-ios-swiftTests/Pods-Alarm-ios-swiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alarm_ios_swiftTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7308A87727826F7E565210E1A5416BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B1C1B0B868170F2DE7661C4EE802F3 /* Pods-Alarm-ios-swift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Alarm-ios-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alarm-ios-swift/Pods-Alarm-ios-swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alarm_ios_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FC000358B04CA62C34D1DB5D2054AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC3D935B0E4623B79C6034C2B86B94C /* CDAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDAlertView/CDAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		995C3A53DEAA96B47E756185345E180D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A15FBC333F9C815A078E16B4660C0F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF3B5D5EDA9F064FF52E9C0634173E8 /* Pods-Alarm-ios-swiftTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Alarm-ios-swiftTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alarm-ios-swiftTests/Pods-Alarm-ios-swiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alarm_ios_swiftTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B74C32789EC276248C101BEF5A2A9242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC3D935B0E4623B79C6034C2B86B94C /* CDAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/ResourceBundle-CDAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E9400CE6450EAD073BA9339ECD78FBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC3D935B0E4623B79C6034C2B86B94C /* CDAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/ResourceBundle-CDAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F6769862AF6E697CAAB95319ADA798E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC3D935B0E4623B79C6034C2B86B94C /* CDAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDAlertView/CDAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFC1237566515101FBA5A337B8656F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8BC66A3DCF1A3FD8AAA12F530F8DEB /* Pods-Alarm-ios-swift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Alarm-ios-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alarm-ios-swift/Pods-Alarm-ios-swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alarm_ios_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		167E1DDB3688C701EC46A67941CE721E /* Build configuration list for PBXNativeTarget "Pods-Alarm-ios-swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				512F54136B9064F984C49F606F9AAC48 /* Debug */,
+				A15FBC333F9C815A078E16B4660C0F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995C3A53DEAA96B47E756185345E180D /* Debug */,
+				1D23278938ADF334174C5BF2A4B6B1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506F044F160DCCAE980EE9F0D01B6C56 /* Build configuration list for PBXNativeTarget "Pods-Alarm-ios-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC1237566515101FBA5A337B8656F13 /* Debug */,
+				7308A87727826F7E565210E1A5416BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F7EAFBA6323B60EAD537F74FB49C1C /* Build configuration list for PBXNativeTarget "CDAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FC000358B04CA62C34D1DB5D2054AAD /* Debug */,
+				F6769862AF6E697CAAB95319ADA798E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD56C041D949064F5CA7899644728E35 /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9400CE6450EAD073BA9339ECD78FBE9 /* Debug */,
+				B74C32789EC276248C101BEF5A2A9242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
