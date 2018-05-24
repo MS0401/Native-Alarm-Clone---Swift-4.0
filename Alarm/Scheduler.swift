@@ -138,10 +138,10 @@ class Scheduler : AlarmSchedulerDelegate
     
     internal func setNotificationWithDate(_ date: Date, onWeekdaysForNotify weekdays:[Int], snoozeEnabled:Bool,  onSnooze: Bool, soundName: String, mediaID: String, index: Int) {
         let AlarmNotification: UILocalNotification = UILocalNotification()
-        AlarmNotification.alertBody = "Wake Up!"
+        AlarmNotification.alertBody = "Your alarm is going off! Remember to keep the app open and on-screen next time!"
         AlarmNotification.alertAction = "Open App"
         AlarmNotification.category = "AlarmClock"
-        AlarmNotification.soundName = "police.wav"
+        AlarmNotification.soundName = "2000hzbeep.wav"
         AlarmNotification.timeZone = TimeZone.current
         let repeating: Bool = !weekdays.isEmpty
         AlarmNotification.userInfo = ["snooze" : snoozeEnabled, "index": index, "soundName": soundName, "mediaID": mediaID, "repeating" : repeating]

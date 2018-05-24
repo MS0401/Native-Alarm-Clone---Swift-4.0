@@ -144,20 +144,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVAudioPlayerDelegate, Al
     func playMediaPlayer(mediaID: String) {
         myMusicPlayer = MPMusicPlayerController()
         
-        if let player = myMusicPlayer {
-            
-            if mediaID != "" {
-                if let media = mediaID.numberValue {
-                    let item = self.findSongWithPersistentIdString(persistentIDString: media)
-                    let mediaItemCollection = MPMediaItemCollection(items: [item!])
-                    
-                    myMusicPlayer?.setQueue(with: mediaItemCollection)
-                    myMusicPlayer?.play()
-                }
+        if mediaID != "" {
+            if let media = mediaID.numberValue {
+                let item = self.findSongWithPersistentIdString(persistentIDString: media)
+                let mediaItemCollection = MPMediaItemCollection(items: [item!])
                 
+                myMusicPlayer?.setQueue(with: mediaItemCollection)
+                myMusicPlayer?.play()
             }
             
         }
+        
     }
     
     func findSongWithPersistentIdString(persistentIDString: NSNumber) -> MPMediaItem? {

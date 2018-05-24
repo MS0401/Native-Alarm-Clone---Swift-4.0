@@ -20,9 +20,7 @@
 		77CBDC612010E8A200F5D554 /* SchedulerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CBDC602010E8A200F5D554 /* SchedulerTestCase.swift */; };
 		9E16062C1C62358F009B2407 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16062B1C62358F009B2407 /* MediaViewController.swift */; };
 		9E1F30731C49128000C66F79 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F30721C49128000C66F79 /* Scheduler.swift */; };
-		9E3B062F1BB8347000453456 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E3B062E1BB8347000453456 /* bell.mp3 */; };
 		9E603F591BD7CA6600303E93 /* LabelEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E603F581BD7CA6600303E93 /* LabelEditViewController.swift */; };
-		9E92445B1C690A8D00724DFA /* tickle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E92445A1C690A8D00724DFA /* tickle.mp3 */; };
 		9E9BEE071BCF8FF8000CF364 /* WeekdaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9BEE061BCF8FF8000CF364 /* WeekdaysViewController.swift */; };
 		9EED78721AA0F03F00961BC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED78711AA0F03F00961BC2 /* AppDelegate.swift */; };
 		9EED78771AA0F03F00961BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EED78751AA0F03F00961BC2 /* Main.storyboard */; };
@@ -31,14 +29,23 @@
 		9EED78941AA1E51700961BC2 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED78931AA1E51700961BC2 /* AlarmModel.swift */; };
 		9EED789A1AA36C7900961BC2 /* AlarmAddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED78991AA36C7900961BC2 /* AlarmAddEditViewController.swift */; };
 		9EEEC58C1BC641BF00459CF7 /* MainAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEEC58B1BC641BF00459CF7 /* MainAlarmViewController.swift */; };
-		C056EBC120A9F91400E3ABB3 /* beep-01a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C056EBC020A9F91400E3ABB3 /* beep-01a.wav */; };
-		C056EBC520AA12E000E3ABB3 /* police.wav in Resources */ = {isa = PBXBuildFile; fileRef = C056EBC420AA12E000E3ABB3 /* police.wav */; };
 		C0A0975220A8D18300A9EEFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0975120A8D18300A9EEFC /* ViewController.swift */; };
 		C0A0975720A8D23700A9EEFC /* BBSevenSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0975420A8D23700A9EEFC /* BBSevenSegmentView.swift */; };
 		C0A0975820A8D23700A9EEFC /* BBSevenSegmentDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0975520A8D23700A9EEFC /* BBSevenSegmentDrawingView.swift */; };
 		C0A0975920A8D23700A9EEFC /* BBSevenSegmentImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0975620A8D23700A9EEFC /* BBSevenSegmentImageView.swift */; };
 		C0A0975B20A8D26C00A9EEFC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0975A20A8D26C00A9EEFC /* Helper.swift */; };
 		C0A0975E20A90A4000A9EEFC /* BackgroundTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0975D20A90A4000A9EEFC /* BackgroundTask.swift */; };
+		C0AE7DEF20B1D45D00884390 /* 8bit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DEE20B1D45D00884390 /* 8bit.mp3 */; };
+		C0AE7DF120B1D46500884390 /* 2000hzbeep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DF020B1D46500884390 /* 2000hzbeep.mp3 */; };
+		C0AE7DF320B1D46F00884390 /* classicalarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DF220B1D46F00884390 /* classicalarm.mp3 */; };
+		C0AE7DF520B1D47800884390 /* cuckcooclock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DF420B1D47800884390 /* cuckcooclock.mp3 */; };
+		C0AE7DF720B1D48000884390 /* dance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DF620B1D48000884390 /* dance.mp3 */; };
+		C0AE7DF920B1D48900884390 /* dogwhistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DF820B1D48900884390 /* dogwhistle.mp3 */; };
+		C0AE7DFB20B1D49100884390 /* loudring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DFA20B1D49100884390 /* loudring.mp3 */; };
+		C0AE7DFD20B1D49900884390 /* oldphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DFC20B1D49900884390 /* oldphone.mp3 */; };
+		C0AE7DFF20B1D4A100884390 /* pingpong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7DFE20B1D4A100884390 /* pingpong.mp3 */; };
+		C0AE7E0120B1D4AA00884390 /* sawing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7E0020B1D4AA00884390 /* sawing.mp3 */; };
+		C0AE7E0320B1D4CE00884390 /* 2000hzbeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = C0AE7E0220B1D4CE00884390 /* 2000hzbeep.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +75,7 @@
 		875DC78F9D2AAFC58CCE1490 /* Pods-Alarm-ios-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm-ios-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm-ios-swift/Pods-Alarm-ios-swift.release.xcconfig"; sourceTree = "<group>"; };
 		9E16062B1C62358F009B2407 /* MediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
 		9E1F30721C49128000C66F79 /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
-		9E3B062E1BB8347000453456 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 		9E603F581BD7CA6600303E93 /* LabelEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelEditViewController.swift; sourceTree = "<group>"; };
-		9E92445A1C690A8D00724DFA /* tickle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tickle.mp3; sourceTree = "<group>"; };
 		9E9BEE061BCF8FF8000CF364 /* WeekdaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdaysViewController.swift; sourceTree = "<group>"; };
 		9EED786C1AA0F03F00961BC2 /* Alarm-ios-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarm-ios-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EED78701AA0F03F00961BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,14 +88,23 @@
 		9EED78931AA1E51700961BC2 /* AlarmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		9EED78991AA36C7900961BC2 /* AlarmAddEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmAddEditViewController.swift; sourceTree = "<group>"; };
 		9EEEC58B1BC641BF00459CF7 /* MainAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAlarmViewController.swift; sourceTree = "<group>"; };
-		C056EBC020A9F91400E3ABB3 /* beep-01a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep-01a.wav"; sourceTree = "<group>"; };
-		C056EBC420AA12E000E3ABB3 /* police.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = police.wav; sourceTree = "<group>"; };
 		C0A0975120A8D18300A9EEFC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0A0975420A8D23700A9EEFC /* BBSevenSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSevenSegmentView.swift; sourceTree = "<group>"; };
 		C0A0975520A8D23700A9EEFC /* BBSevenSegmentDrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSevenSegmentDrawingView.swift; sourceTree = "<group>"; };
 		C0A0975620A8D23700A9EEFC /* BBSevenSegmentImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSevenSegmentImageView.swift; sourceTree = "<group>"; };
 		C0A0975A20A8D26C00A9EEFC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		C0A0975D20A90A4000A9EEFC /* BackgroundTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTask.swift; sourceTree = "<group>"; };
+		C0AE7DEE20B1D45D00884390 /* 8bit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8bit.mp3; sourceTree = "<group>"; };
+		C0AE7DF020B1D46500884390 /* 2000hzbeep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2000hzbeep.mp3; sourceTree = "<group>"; };
+		C0AE7DF220B1D46F00884390 /* classicalarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = classicalarm.mp3; sourceTree = "<group>"; };
+		C0AE7DF420B1D47800884390 /* cuckcooclock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cuckcooclock.mp3; sourceTree = "<group>"; };
+		C0AE7DF620B1D48000884390 /* dance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dance.mp3; sourceTree = "<group>"; };
+		C0AE7DF820B1D48900884390 /* dogwhistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dogwhistle.mp3; sourceTree = "<group>"; };
+		C0AE7DFA20B1D49100884390 /* loudring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loudring.mp3; sourceTree = "<group>"; };
+		C0AE7DFC20B1D49900884390 /* oldphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oldphone.mp3; sourceTree = "<group>"; };
+		C0AE7DFE20B1D4A100884390 /* pingpong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pingpong.mp3; sourceTree = "<group>"; };
+		C0AE7E0020B1D4AA00884390 /* sawing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sawing.mp3; sourceTree = "<group>"; };
+		C0AE7E0220B1D4CE00884390 /* 2000hzbeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2000hzbeep.wav; sourceTree = "<group>"; };
 		DF25B0684FA4AB9B8AFFF18D /* Pods-Alarm-ios-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm-ios-swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm-ios-swiftTests/Pods-Alarm-ios-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,8 +224,7 @@
 		9EED786E1AA0F03F00961BC2 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
-				C056EBC420AA12E000E3ABB3 /* police.wav */,
-				C056EBC020A9F91400E3ABB3 /* beep-01a.wav */,
+				C0AE7E0220B1D4CE00884390 /* 2000hzbeep.wav */,
 				770405701EA09FB2005F9379 /* Extension */,
 				77A857131E42FDF200971367 /* App */,
 				77A857121E42FDAD00971367 /* Controller */,
@@ -227,8 +240,16 @@
 		9EED786F1AA0F03F00961BC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9E92445A1C690A8D00724DFA /* tickle.mp3 */,
-				9E3B062E1BB8347000453456 /* bell.mp3 */,
+				C0AE7DEE20B1D45D00884390 /* 8bit.mp3 */,
+				C0AE7DF020B1D46500884390 /* 2000hzbeep.mp3 */,
+				C0AE7DF220B1D46F00884390 /* classicalarm.mp3 */,
+				C0AE7DF420B1D47800884390 /* cuckcooclock.mp3 */,
+				C0AE7DF620B1D48000884390 /* dance.mp3 */,
+				C0AE7DF820B1D48900884390 /* dogwhistle.mp3 */,
+				C0AE7DFA20B1D49100884390 /* loudring.mp3 */,
+				C0AE7DFC20B1D49900884390 /* oldphone.mp3 */,
+				C0AE7DFE20B1D4A100884390 /* pingpong.mp3 */,
+				C0AE7E0020B1D4AA00884390 /* sawing.mp3 */,
 				9EED78701AA0F03F00961BC2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -377,12 +398,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E92445B1C690A8D00724DFA /* tickle.mp3 in Resources */,
 				9EED78771AA0F03F00961BC2 /* Main.storyboard in Resources */,
-				9E3B062F1BB8347000453456 /* bell.mp3 in Resources */,
-				C056EBC120A9F91400E3ABB3 /* beep-01a.wav in Resources */,
 				9EED787C1AA0F03F00961BC2 /* LaunchScreen.xib in Resources */,
-				C056EBC520AA12E000E3ABB3 /* police.wav in Resources */,
+				C0AE7DEF20B1D45D00884390 /* 8bit.mp3 in Resources */,
+				C0AE7DFB20B1D49100884390 /* loudring.mp3 in Resources */,
+				C0AE7E0120B1D4AA00884390 /* sawing.mp3 in Resources */,
+				C0AE7DF920B1D48900884390 /* dogwhistle.mp3 in Resources */,
+				C0AE7DF520B1D47800884390 /* cuckcooclock.mp3 in Resources */,
+				C0AE7E0320B1D4CE00884390 /* 2000hzbeep.wav in Resources */,
+				C0AE7DF120B1D46500884390 /* 2000hzbeep.mp3 in Resources */,
+				C0AE7DF320B1D46F00884390 /* classicalarm.mp3 in Resources */,
+				C0AE7DFF20B1D4A100884390 /* pingpong.mp3 in Resources */,
+				C0AE7DFD20B1D49900884390 /* oldphone.mp3 in Resources */,
+				C0AE7DF720B1D48000884390 /* dance.mp3 in Resources */,
 				9EED78791AA0F03F00961BC2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

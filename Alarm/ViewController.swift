@@ -51,45 +51,46 @@ class ViewController: UIViewController {
     
     var backgroundTaskIdentifier: UIBackgroundTaskIdentifier?
     var currenttimeTimer: Timer?
-    var panTap: Int = 1
-    var panTap1: Int = 0
+    var panTap: Int = 4
+    var panTap1: Int = 3
     var loopIndex: Int = 0
     var colorArray: [UIColor] = [UIColor.init(netHex: 0x007AFF), UIColor.init(netHex: 0xFF8719), UIColor.init(netHex: 0x061320), UIColor.init(netHex: 0x5ED647), UIColor.init(netHex: 0xB468D6), UIColor.init(netHex: 0xBBD64F), UIColor.init(netHex: 0xffffff), UIColor.init(netHex: 0xffb6c1), UIColor.init(netHex: 0x3CB0FF)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        self.dayLabel.textColor = UIColor.init(netHex: 0x007AFF)
-        self.monthLabel.textColor = UIColor.init(netHex: 0x007AFF)
-        self.pmLabel.textColor = UIColor.init(netHex: 0x007AFF)
-        self.dot1.backgroundColor = UIColor.init(netHex: 0x007AFF)
+        self.dayLabel.textColor = UIColor.init(netHex: 0x5ED647)
+        self.monthLabel.textColor = UIColor.init(netHex: 0x5ED647)
+        self.pmLabel.textColor = UIColor.init(netHex: 0x5ED647)
+        self.dot1.backgroundColor = UIColor.init(netHex: 0x5ED647)
         self.dot1.layer.cornerRadius = self.dot1.frame.height/2
-        self.dot2.backgroundColor = UIColor.init(netHex: 0x007AFF)
+        self.dot2.backgroundColor = UIColor.init(netHex: 0x5ED647)
         self.dot2.layer.cornerRadius = self.dot2.frame.height/2
-        self.dot3.backgroundColor = UIColor.init(netHex: 0x007AFF)
+        self.dot3.backgroundColor = UIColor.init(netHex: 0x5ED647)
         self.dot3.layer.cornerRadius = self.dot3.frame.height/2
-        self.dot4.backgroundColor = UIColor.init(netHex: 0x007AFF)
+        self.dot4.backgroundColor = UIColor.init(netHex: 0x5ED647)
         self.dot4.layer.cornerRadius = self.dot4.frame.height/2
-        self.hourTenNumber.onColor = UIColor.init(netHex: 0x007AFF)
-        self.houroneNumber.onColor = UIColor.init(netHex: 0x007AFF)
-        self.minuteTenNumber.onColor = UIColor.init(netHex: 0x007AFF)
-        self.minuteoneNumber.onColor = UIColor.init(netHex: 0x007AFF)
-        self.secondTenNumber.onColor = UIColor.init(netHex: 0x007AFF)
-        self.secondoneNumber.onColor = UIColor.init(netHex: 0x007AFF)
+        self.hourTenNumber.onColor = UIColor.init(netHex: 0x5ED647)
+        self.houroneNumber.onColor = UIColor.init(netHex: 0x5ED647)
+        self.minuteTenNumber.onColor = UIColor.init(netHex: 0x5ED647)
+        self.minuteoneNumber.onColor = UIColor.init(netHex: 0x5ED647)
+        self.secondTenNumber.onColor = UIColor.init(netHex: 0x5ED647)
+        self.secondoneNumber.onColor = UIColor.init(netHex: 0x5ED647)
         self.alarmImage.image = self.alarmImage.image!.withRenderingMode(.alwaysTemplate)
-        self.alarmImage.tintColor = UIColor.init(netHex: 0x007AFF)
+        self.alarmImage.tintColor = UIColor.init(netHex: 0x5ED647)
         
         if let temp_view = self.date.subviews[0] as? BBSevenSegmentView {
-            temp_view.onColor = UIColor.init(netHex: 0x007AFF)
+            temp_view.onColor = UIColor.init(netHex: 0x5ED647)
         }
         if let temp_view = self.date.subviews[1] as? BBSevenSegmentView {
-            temp_view.onColor = UIColor.init(netHex: 0x007AFF)
+            temp_view.onColor = UIColor.init(netHex: 0x5ED647)
         }
         
         self.firstDotView.isHidden = true
         self.secondDotView.isHidden = true
         
-        self.backgroundImg.image = UIImage(named: "background5")
+        self.backgroundImg.image = UIImage(named: "background4")
+
         
         self.createPanGestureRecognizerUIView(targetView: panGestureView)
         self.createPanGestureRecognizerImageView(targetView: self.view)
@@ -181,10 +182,13 @@ class ViewController: UIViewController {
                 UIView.transition(with: self.backgroundImg,
                                   duration: 0.75,
                                   options: .transitionCrossDissolve,
-                                  animations: { self.backgroundImg.image = UIImage(named: "background\(self.panTap)") },
+                                  animations: { self.backgroundImg.image = UIImage(named: "background\(self.panTap)")
+                                    
+
+                },
                                   completion: nil)
                 
-                if self.panTap == 6 {
+                if self.panTap == 11 {
                     self.panTap = 1
                 }else {
                     self.panTap = self.panTap + 1
@@ -198,7 +202,7 @@ class ViewController: UIViewController {
                                   completion: nil)
                 
                 if self.panTap == 1 {
-                    self.panTap = 6
+                    self.panTap = 11
                 }else {
                     self.panTap = self.panTap - 1
                 }

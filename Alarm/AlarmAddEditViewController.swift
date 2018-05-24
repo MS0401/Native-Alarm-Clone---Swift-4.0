@@ -58,7 +58,14 @@ class AlarmAddEditViewController: UIViewController, UITableViewDelegate, UITable
         tempAlarm.date = date
         tempAlarm.label = segueInfo.label
         tempAlarm.enabled = true
-        tempAlarm.mediaLabel = segueInfo.mediaLabel
+        
+        if segueInfo.mediaLabel == "Classic Alarm" {
+            segueInfo.mediaLabel = "classicalarm"
+            tempAlarm.mediaLabel = segueInfo.mediaLabel
+        }else {
+            tempAlarm.mediaLabel = segueInfo.mediaLabel
+        }
+        
         tempAlarm.mediaID = segueInfo.mediaID
         tempAlarm.snoozeEnabled = snoozeEnabled
         tempAlarm.repeatWeekdays = segueInfo.repeatWeekdays

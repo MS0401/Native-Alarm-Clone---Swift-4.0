@@ -17,7 +17,7 @@ class MediaViewController: UIViewController, MPMediaPickerControllerDelegate, UI
     
     var delegate: GotoMedia! = nil
     
-    fileprivate let numberOfRingtones = 2
+    fileprivate let numberOfRingtones = 10
     var mediaItem: MPMediaItem?
     var mediaLabel: String!
     var mediaID: String!
@@ -25,10 +25,17 @@ class MediaViewController: UIViewController, MPMediaPickerControllerDelegate, UI
     var selectedMediaTitle: String = ""
     var selectedMediaID: String = ""
     
+    var soundstitles = ["8bit", "2000hzbeep", "Classic Alarm", "Cuckcooclock", "Dance", "Dogwhistle", "Loudring", "Oldphone", "Pingpong", "Sawing"]
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var back: UIImageView!
     var mediaPicker: MPMediaPickerController?
+    
+    var localplayBOOL: Bool = false
+    var applePlayBOOL: Bool = false
+    var backgroundTask = BackgroundTask()
+    var myMusicPlayer: MPMusicPlayerController?
+    var selectIndex = 100
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +46,16 @@ class MediaViewController: UIViewController, MPMediaPickerControllerDelegate, UI
     
     
     override func viewWillDisappear(_ animated: Bool) {
+        
+        if localplayBOOL {
+            backgroundTask.stopBackgroundTask()
+            localplayBOOL = false
+        }
+        
+        if applePlayBOOL {
+            self.myMusicPlayer?.stop()
+            applePlayBOOL = false
+        }
         
         delegate.GotoMediaViewController(mediaID: self.mediaID, mediaLabel: self.mediaLabel, mediaTitle: self.selectedMediaTitle)
     }
@@ -146,17 +163,19 @@ class MediaViewController: UIViewController, MPMediaPickerControllerDelegate, UI
             
         }
         else if indexPath.section == 1 {//3
-            if indexPath.row == 0 {
-                cell!.textLabel!.text = "bell"
-            }
-            else if indexPath.row == 1 {
-                cell!.textLabel!.text = "tickle"
-            }
             
-            if cell!.textLabel!.text == mediaLabel {
+            cell!.textLabel!.text = self.soundstitles[indexPath.row]
+            
+            var lbl = cell?.textLabel?.text?.lowercased()
+            if lbl == "classic alarm" {
+                lbl = "Classic Alarm"
+            }
+            if lbl == mediaLabel {
                 if self.mediaID == "" {
                     cell!.accessoryType = UITableViewCellAccessoryType.checkmark
                 }
+            }else {
+                cell!.accessoryType = UITableViewCellAccessoryType.none
             }
         }
         
@@ -183,20 +202,80 @@ class MediaViewController: UIViewController, MPMediaPickerControllerDelegate, UI
             if indexPath.section == 0 {//2
                 if indexPath.row == 0 {
                     
+                    if localplayBOOL {
+                        backgroundTask.stopBackgroundTask()
+                        localplayBOOL = false
+                    }
+                    
+                    if applePlayBOOL {
+                        self.myMusicPlayer?.stop()
+                        applePlayBOOL = false
+                    }
+                    
                     present(picker, animated: true, completion: nil)
                 }else if indexPath.row == 1 {
                     mediaID = self.selectedMediaID
                     
                     cell?.accessoryType = UITableViewCellAccessoryType.checkmark
+                    if localplayBOOL {
+                        backgroundTask.stopBackgroundTask()
+                        localplayBOOL = false
+                    }
                     
+                    if !applePlayBOOL {
+                        self.playMediaPlayer(mediaID: self.mediaID)
+                        applePlayBOOL = true
+                    }else {
+                        self.myMusicPlayer?.stop()
+                        applePlayBOOL = false
+                    }
                                         
                 }
             }
             else if indexPath.section == 1 {//3
                 
                 cell?.accessoryType = UITableViewCellAccessoryType.checkmark
-                mediaLabel = cell?.textLabel?.text!
+                if cell?.textLabel?.text == "Classic Alarm" {
+                    mediaLabel = "Classic Alarm"
+                }else {
+                    mediaLabel = cell?.textLabel?.text!.lowercased()
+                }
+                
                 mediaID = ""
+
+                if applePlayBOOL {
+                    self.myMusicPlayer?.stop()
+                    applePlayBOOL = false
+                }
+                
+                if !localplayBOOL {
+                    
+                    var soundname = ""
+                    if soundstitles[indexPath.row] == "Classic Alarm" {
+                        soundname = "classicalarm"
+                    }else {
+                        soundname = soundstitles[indexPath.row].lowercased()
+                    }
+                    
+                    backgroundTask.startBackgroundTask(audioName: soundname)
+                    localplayBOOL = true
+                    self.selectIndex = indexPath.row
+                }else {
+                    backgroundTask.stopBackgroundTask()
+                    localplayBOOL = false
+                    if self.selectIndex != indexPath.row {
+                        var soundname = ""
+                        if soundstitles[indexPath.row] == "Classic Alarm" {
+                            soundname = "classicalarm"
+                        }else {
+                            soundname = soundstitles[indexPath.row].lowercased()
+                        }
+                        
+                        backgroundTask.startBackgroundTask(audioName: soundname)
+                        localplayBOOL = true
+                        self.selectIndex = indexPath.row
+                    }
+                }
                 
             }
             
@@ -228,7 +307,8 @@ class MediaViewController: UIViewController, MPMediaPickerControllerDelegate, UI
             self.selectedMediaID = String(describing: id)
             
             self.tableView.reloadData()
-            
+            self.playMediaPlayer(mediaID: self.mediaID)
+            self.applePlayBOOL = true
             self.dismiss(animated: true, completion: nil)
         }
     }
@@ -248,4 +328,22 @@ class MediaViewController: UIViewController, MPMediaPickerControllerDelegate, UI
         }
         return song
     }
+    
+    func playMediaPlayer(mediaID: String) {
+        myMusicPlayer = MPMusicPlayerController()
+        
+        if mediaID != "" {
+            if let media = mediaID.numberValue {
+                let item = self.findSongWithPersistentIdString(persistentIDString: media)
+                let mediaItemCollection = MPMediaItemCollection(items: [item!])
+                
+                myMusicPlayer?.setQueue(with: mediaItemCollection)
+                myMusicPlayer?.play()
+            }
+            
+        }
+        
+    }
 }
+
+

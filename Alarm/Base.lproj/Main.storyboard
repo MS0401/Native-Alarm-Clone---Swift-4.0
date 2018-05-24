@@ -378,7 +378,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="na7-a4-VXU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background5" translatesAutoresizingMaskIntoConstraints="NO" id="na7-a4-VXU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WT1-M5-veF">
@@ -564,16 +564,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="na7-a4-VXU" firstAttribute="trailing" secondItem="Dig-SP-M9X" secondAttribute="trailing" id="1e8-MD-AaQ"/>
-                            <constraint firstItem="na7-a4-VXU" firstAttribute="leading" secondItem="Dig-SP-M9X" secondAttribute="leading" id="AIF-TN-aWr"/>
                             <constraint firstItem="WT1-M5-veF" firstAttribute="centerX" secondItem="Dig-SP-M9X" secondAttribute="centerX" id="AbA-46-A28"/>
                             <constraint firstItem="WT1-M5-veF" firstAttribute="width" secondItem="Y2c-hf-DGH" secondAttribute="width" id="DkX-37-84e"/>
                             <constraint firstItem="WT1-M5-veF" firstAttribute="centerY" secondItem="Dig-SP-M9X" secondAttribute="centerY" constant="-19" id="Nka-pW-7rj"/>
                             <constraint firstItem="8su-3n-Hwy" firstAttribute="trailing" secondItem="Dig-SP-M9X" secondAttribute="trailing" id="NlT-6G-4lF"/>
-                            <constraint firstItem="na7-a4-VXU" firstAttribute="bottom" secondItem="Dig-SP-M9X" secondAttribute="bottom" id="ZSd-Qm-cLk"/>
-                            <constraint firstItem="na7-a4-VXU" firstAttribute="top" secondItem="Y2c-hf-DGH" secondAttribute="top" id="bDD-XI-2f6"/>
+                            <constraint firstItem="na7-a4-VXU" firstAttribute="trailing" secondItem="Dig-SP-M9X" secondAttribute="trailing" id="baG-Wq-NUc"/>
+                            <constraint firstItem="na7-a4-VXU" firstAttribute="top" secondItem="Y2c-hf-DGH" secondAttribute="top" id="fih-mp-OPT"/>
                             <constraint firstItem="Dig-SP-M9X" firstAttribute="trailing" secondItem="wRK-OP-Yvf" secondAttribute="trailing" constant="16" id="kjD-Zp-B3D"/>
                             <constraint firstItem="WT1-M5-veF" firstAttribute="height" secondItem="Y2c-hf-DGH" secondAttribute="height" multiplier="128/667" constant="51" id="kyO-6C-CIZ"/>
+                            <constraint firstItem="na7-a4-VXU" firstAttribute="bottom" secondItem="Dig-SP-M9X" secondAttribute="bottom" id="l38-is-tnt"/>
+                            <constraint firstItem="na7-a4-VXU" firstAttribute="leading" secondItem="Dig-SP-M9X" secondAttribute="leading" id="pwH-zY-QFr"/>
                             <constraint firstItem="Dig-SP-M9X" firstAttribute="bottom" secondItem="wRK-OP-Yvf" secondAttribute="bottom" constant="20" id="xVx-Om-zq6"/>
                             <constraint firstItem="8su-3n-Hwy" firstAttribute="bottom" secondItem="Dig-SP-M9X" secondAttribute="bottom" id="yDB-x7-oaZ"/>
                         </constraints>
@@ -611,6 +611,7 @@
     <resources>
         <image name="alarm" width="128" height="128"/>
         <image name="back" width="256" height="256"/>
+        <image name="background5" width="133" height="237"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vZt-5w-FkZ"/>
